@@ -1,0 +1,36 @@
+.output-container{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    border: 1px solid black;
+    background-color: white;
+    box-shadow: 0 5px 8px 0 rgba(0,0,0,0.2);
+    border-radius: 5px;
+    margin-left: 37%;
+    margin-top: 12%;
+    position: relative;
+    overflow: hidden;
+}
+
+body{
+    background-color:blueviolet;
+}
+
+.button{
+    width: 100px;
+    margin: 5px;
+}
+
+.header{
+    display: flex;
+    text-align: start;
+}
+
+.score{
+    display: flex;
+    text-align: start;
+}
