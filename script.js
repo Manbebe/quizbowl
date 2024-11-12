@@ -15,7 +15,14 @@ submitSwitch.addEventListener("click", () => {
 const questionsArray = [
     "How old is Grimace?",
     "What is 938 x 10 / 4?",
-    "What is my last name spelt backwards?"
+    "What is my last name spelt backwards?",
+    "What is the capital of France?",
+    "What is 2 + 2?",
+    "Name a primary color.",
+    "What is the largest planet in our solar system?",
+    "What is the square root of 64?",
+    "Who wrote 'To Kill a Mockingbird'?",
+    "What is the boiling point of water in Celsius?"
 ];
 
 let currentQuestionIndex = 0;
