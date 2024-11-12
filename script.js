@@ -34,7 +34,7 @@ const questionsArray = [
     { question: "Who can rap faster, A human or AI?", answer: "AI" },
     { question: "Is the book 'Hunger Games' about hungry people playing some video games?", answer: "no" },
     { question: "DO YOU LIKE BACON SAY YES PLEASE SAY YES I DEMAND YOU SAY YES BI-", answer: "yes" }
-    
+    { question: "unlimited bacon, but no more viddeo game, or game, unlimited game, or no more games", answer: "01110111 01100101 01101100 01101100 00101110 00101110 00101110 01111001 01101111 01110101 00100000 01100110 01101001 01101110 01100001 01101100 01101100 01111001 00100000 01100110 01101111 01110101 01101110 01100100 00100000 01101101 01100101" }
 ];
 
 let currentQuestionIndex = 0;
