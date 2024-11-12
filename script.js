@@ -4,7 +4,7 @@ const score = document.querySelector('.score');
 const questions = document.querySelector('.questions');
 const input = document.querySelector('.input-container');
 const outputContainer = document.querySelector('.output-container');
-const submitSwitch = document.getElementById("#submit-switch");
+const submitSwitch = document.getElementById("submit-switch");
 submitSwitch.addEventListener("click", () => {
     document.getElementById('input-field').value = '';
 
