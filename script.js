@@ -2,11 +2,11 @@ const submitButton = document.querySelector('.submit');
 const header = document.querySelector('.header');
 const score = document.querySelector('.score');
 const questions = document.querySelector('.questions');
-const inputContainer = document.querySelector('.input-container');
+const input = document.querySelector('.input-container');
 const outputContainer = document.querySelector('.output-container');
-const submitSwitch = document.getElementById("submit-switch");
+const submitSwitch = document.getElementById("#submit-switch");
 submitSwitch.addEventListener("click", () => {
-    document.getElementById('name').value = '';
+    document.getElementById('input-field').value = '';
 
     currentQuestionIndex = (currentQuestionIndex + 1) % questionsArray.length;
     document.querySelector('.questions').textContent = questionsArray[currentQuestionIndex];
@@ -17,12 +17,13 @@ const questionsArray = [
     "What is 938 x 10 / 4?",
     "What is my last name spelt backwards?",
     "What is the capital of France?",
-    "What is 2 + 2?",
-    "Name a primary color.",
-    "What is the largest planet in our solar system?",
-    "What is the square root of 64?",
-    "Who wrote 'To Kill a Mockingbird'?",
-    "What is the boiling point of water in Celsius?"
+    "What is Mr.Cooper's first name?",
+    "This is a Quiz____!",
+    "Is Pluto a planet (in my heart)?",
+    "Who can rap faster, A human or AI?",
+    "Is the book 'Hunger Games' about hungry people playing some video games?",
+    "DO YOU LIKE BACON SAY YES PLEASE SAY YES I DEMAND YOU SAY YES BI-",
+    "Is it raining today this was made?"
 ];
 
 let currentQuestionIndex = 0;
