@@ -1,10 +1,10 @@
 const submitButton = document.querySelector('.submit');
 const header = document.querySelector('.header');
-const score = document.querySelector('.score');
 const questions = document.querySelector('.questions');
 const input = document.querySelector('.input-container');
 const outputContainer = document.querySelector('.output-container');
 const submitSwitch = document.getElementById("submit-switch");
+const scoreContainer = document.getElementById(".score"); 
 let isFirstSubmission = true;
 
 submitSwitch.addEventListener("click", () => {
@@ -13,9 +13,9 @@ submitSwitch.addEventListener("click", () => {
     } else {
         const userAnswer = document.getElementById('input-field').value;
         if (userAnswer === questionsArray[currentQuestionIndex].answer) {
-            alert("Nice...i guess");
+            alert("Good boy ;)");
         } else {
-            alert("DUMB ASS XD");
+            alert("BAD BOY >:(");
         }
     }
     document.getElementById('input-field').value = '';
@@ -33,7 +33,9 @@ const questionsArray = [
     { question: "Is Pluto a planet (in my heart)?", answer: "yes" },
     { question: "Who can rap faster, A human or AI?", answer: "AI" },
     { question: "Is the book 'Hunger Games' about hungry people playing some video games?", answer: "no" },
-    { question: "DO YOU LIKE BACON SAY YES PLEASE SAY YES I DEMAND YOU SAY YES BI-", answer: "yes" }
+    { question: "DO YOU LIKE BACON SAY YES PLEASE SAY YES I DEMAND YOU SAY YES!!!", answer: "yes" }
 ];
 
 let currentQuestionIndex = 0;
+
+
