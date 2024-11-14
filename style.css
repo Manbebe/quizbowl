@@ -20,9 +20,12 @@ body{
     background-color:blueviolet;
 }
 
-.button{
+.button-container{
     width: 100px;
     margin: 5px;
+    border: solid 1px black;
+    border-radius: 5px;
+    background-color: lightblue;
 }
 
 .header{

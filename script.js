@@ -1,12 +1,30 @@
-const submitButton = document.querySelector('.submit');
+const button = document.querySelector('.button-container');
 const header = document.querySelector('.header');
-const questions = document.querySelector('.questions');
-const input = document.querySelector('.input-container');
+const question = document.querySelector('.questions');
+const input = document.querySelector('#input-field');
 const outputContainer = document.querySelector('.output-container');
-const submitSwitch = document.getElementById("submit-switch");
-const scoreContainer = document.getElementById(".score"); 
+let scoreContainer = document.getElementById(".score-container");
 let isFirstSubmission = true;
+let questionList = ["How old is Grimace?", "What is 938 x 10 / 4?", "What is my last name spelt backwards?", "What is the capital of France?", "What is Mr.Cooper's first name?", "This is a Quiz____!", "Is Pluto a planet (in my heart)?", "Who can rap faster, A human or AI?", "Is the book 'Hunger Games' about hungry people playing some video games?", "DO YOU LIKE BACON SAY YES PLEASE SAY YES I DEMAND YOU SAY YES!!!" ];
+let answerList = ["52", "2345", "kcamroccm", "paris", "louis", "bowl", "yes", "ai", "no", "yes" ];
+let score = 0;
+let questionIndex = 0;
 
+question.textContent = questionList[questionIndex];
+
+let submitFunction = () =>{
+    button.addEventListener("click", () =>{
+        if(input.value === answerList[questionIndex])(
+            questionIndex += 1;
+            score += 1;
+            question.textContent = questionList[questionIndex];
+            scoreContainer.textContent = "Score:" + score;
+        )else(
+            score -= 1;
+        )
+
+    });
+}
 submitSwitch.addEventListener("click", () => {
     if (isFirstSubmission) {
         isFirstSubmission = false;
@@ -23,19 +41,7 @@ submitSwitch.addEventListener("click", () => {
     document.querySelector('.questions').textContent = questionsArray[currentQuestionIndex].question;
 });
 
-const questionsArray = [
-    { question: "How old is Grimace?", answer: "50" },
-    { question: "What is 938 x 10 / 4?", answer: "2345" },
-    { question: "What is my last name spelt backwards?", answer: "kcamroccm" },
-    { question: "What is the capital of France?", answer: "Paris" },
-    { question: "What is Mr.Cooper's first name?", answer: "Louis" },
-    { question: "This is a Quiz____!", answer: "bowl" },
-    { question: "Is Pluto a planet (in my heart)?", answer: "yes" },
-    { question: "Who can rap faster, A human or AI?", answer: "AI" },
-    { question: "Is the book 'Hunger Games' about hungry people playing some video games?", answer: "no" },
-    { question: "DO YOU LIKE BACON SAY YES PLEASE SAY YES I DEMAND YOU SAY YES!!!", answer: "yes" }
-];
 
-let currentQuestionIndex = 0;
+
 
 
