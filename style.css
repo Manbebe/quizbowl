@@ -14,26 +14,44 @@
     margin-top: 12%;
     position: relative;
     overflow: hidden;
+    transition: 0.3s ease;
 }
 
+
+.output-container:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 15px 0 rgba(0,0,0,0.3);
+}
 body{
     background-color:blueviolet;
 }
 
-.button-container{
+.button-container button {
     width: 100px;
-    margin: 5px;
-    border: solid 1px black;
-    border-radius: 5px;
-    background-color: lightblue;
+    height: 20px;
+    background-color: lightblue; /* Inherit the background color from the container */
+    border: none; 
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
 
-.header{
-    display: flex;
-    text-align: start;
+.button-container button:hover {
+    background-color: lightskyblue; /* Change to a darker color */
 }
 
-.score{
+.title-container{
     display: flex;
     text-align: start;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.score-container {
+    display: flex;
+    align-items: center; /* Center text vertically */
+    justify-content: center; /* Center text horizontally */
+    text-align: center;
+    border: solid 2px grey;
+    border-radius: 20px;
+    background-color: lightgray;
+    height: 30px;
 }

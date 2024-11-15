@@ -29,7 +29,7 @@ let submitFunction = () =>{
 
 }
 let endgame = () =>{
-    if(questionIndex > 2){
+    if(questionIndex > 9){
         scoreContainer.textContent = "Final score: " + score;
         question.textContent = "Congrats meanie dont play again >:(";
         input.style.display = "none";
